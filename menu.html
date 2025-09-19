@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menü | HSB Sarıyer Börekçisi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fffdf7;
+      color: #333;
+    }
+    header {
+      background: #b22222;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 20px;
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .category {
+      padding: 20px;
+    }
+    .category h2 {
+      margin-bottom: 15px;
+      border-left: 6px solid #b22222;
+      padding-left: 10px;
+      font-size: 20px;
+    }
+    .menu-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 15px;
+    }
+    .menu-item {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .menu-item:hover {
+      transform: scale(1.03);
+    }
+    .menu-item img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+    }
+    .menu-item p {
+      margin: 10px 0;
+      font-size: 15px;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      background: #f5f5f5;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HSB Sarıyer Börekçisi</h1>
+    <nav>
+      <a href="index.html">Anasayfa</a>
+      <a href="menu.html">Menü</a>
+    </nav>
+  </header>
+  <!-- Ana Yemekler -->
+  <section class="category">
+    <h2>🍲 Yemekler</h2>
+    <div class="menu-container">
+      <div class="menu-item"><img src="resimler/etdoner.jpeg"><p>Et Döner</p></div>
+      <div class="menu-item"><img src="resimler/tavukdoner.jpg"><p>Tavuk Döner</p></div>
+      <div class="menu-item"><img src="resimler/hamburger.jpg"><p>Hamburger</p></div>
+      <div class="menu-item"><img src="resimler/kofte.jpg"><p>Köfte</p></div>
+      <div class="menu-item"><img src="resimler/pilav.jpg"><p>Pilav</p></div>
+      <div class="menu-item"><img src="resimler/lahana-sarma.jpg"><p>Lahana Sarma</p></div>
+      <div class="menu-item"><img src="resimler/patso.jpg"><p>Patso</p></div>
+
+      <!-- Senin eklediklerin -->
+      <div class="menu-item"><img src="resimler/arnavut-cigeri.jpg"><p>Arnavut Ciğeri</p></div>
+      <div class="menu-item"><img src="resimler/az-corba.jpg"><p> Mercimek Çorbası</p></div>
+      <div class="menu-item"><img src="resimler/etsote.jpg"><p> Et Sote</p></div>
+      <div class="menu-item"><img src="resimler/az-etli-kurufasulye.jpg"><p>Etli Kuru Fasulye</p></div>
+      <div class="menu-item"><img src="resimler/az-izmir-kofte.jpg"><p>İzmir Köfte</p></div>
+      <div class="menu-item"><img src="resimler/bamya.jpg"><p>Bamya</p></div>
+      <div class="menu-item"><img src="resimler/bezelye.jpg"><p>Bezelye</p></div>
+      <div class="menu-item"><img src="resimler/bulgur-pilavi.jpg"><p>Bulgur Pilavı</p></div>
+      <div class="menu-item"><img src="resimler/cacik.jpg"><p>Cacık</p></div>
+      <div class="menu-item"><img src="resimler/citir-tavuk.jpg"><p>Çıtır Tavuk</p></div>
+      <div class="menu-item"><img src="resimler/dolma-biber.jpg"><p>Dolma Biber</p></div>
+      <div class="menu-item"><img src="resimler/makarna-domates.jpg"><p>Domates Soslu Makarna</p></div>
+      <div class="menu-item"><img src="resimler/dugun-corba.jpg"><p>Etli Düğün Çorbası</p></div>
+      <div class="menu-item"><img src="resimler/ezogelin.jpg"><p>Ezogelin Çorbası</p></div>
+      <div class="menu-item"><img src="resimler/hasanpasa-kofte.jpg"><p>Hasanpaşa Köfte</p></div>
+      <div class="menu-item"><img src="resimler/izmir-kofte.jpg"><p>İzmir Köfte</p></div>
+      <div class="menu-item"><img src="resimler/kadinbudu.jpg"><p>Kadın Budu Köfte</p></div>
+      <div class="menu-item"><img src="resimler/karniyarik.jpg"><p>Karnıyarık</p></div>
+      <div class="menu-item"><img src="resimler/sebzeli-kofte.jpg"><p>Sebzeli Köfte</p></div>
+      <div class="menu-item"><img src="resimler/kori-tavuk.jpg"><p>Köri Soslu Tavuk</p></div>
+      <div class="menu-item"><img src="resimler/kremali-domatescorba.jpg"><p>Kremalı Domates Çorbası</p></div>
+      <div class="menu-item"><img src="resimler/kremali-mantarli-tavuk.jpg"><p>Kremalı Mantarlı Tavuk</p></div>
+      <div class="menu-item"><img src="resimler/manti.jpg"><p>Mantı</p></div>
+      <div class="menu-item"><img src="resimler/misket-kofte.jpg"><p>Misket Köfte</p></div>
+      <div class="menu-item"><img src="resimler/musakka.jpg"><p>Musakka</p></div>
+      <div class="menu-item"><img src="resimler/nohut.jpg"><p>Nohut</p></div>
+      <div class="menu-item"><img src="resimler/orman-kebabi.jpg"><p>Orman Kebabı</p></div>
+      <div class="menu-item"><img src="resimler/ozbek-pilavi.jpg"><p>Özbek Pilavı</p></div>
+      <div class="menu-item"><img src="resimler/pilav-kavurma.jpg"><p>Pilav Üstü Kavurma</p></div>
+      <div class="menu-item"><img src="resimler/pilav-fasulye.jpg"><p>Pilav Üstü Fasulye</p></div>
+      <div class="menu-item"><img src="resimler/pilav-kofte.jpg"><p>Pilav Üstü Köfte</p></div>
+      <div class="menu-item"><img src="resimler/tavuk-izgara.jpg"><p>Tavuk But Izgara</p></div>
+      <div class="menu-item"><img src="resimler/tavuk-corba.jpg"><p>Tavuk Çorbası</p></div>
+      <div class="menu-item"><img src="resimler/tavuk-haslama.jpg"><p>Tavuk Haşlama</p></div>
+      <div class="menu-item"><img src="resimler/tavuk-sote.jpg"><p>Tavuk Sote</p></div>
+    </div>
+  </section>
+
+  <!-- Börekler -->
+  <section class="category">
+    <h2>🥐 Börekler</h2>
+    <div class="menu-container">
+      <div class="menu-item"><img src="resimler/kavurma.jpg"><p>Kavurmalı Kaşarlı</p></div>
+      <div class="menu-item"><img src="resimler/pastirma.jpg"><p>Pastırmalı Kaşarlı</p></div>
+      <div class="menu-item"><img src="resimler/peynirsu.jpg"><p>Peynirli Su Böreği</p></div>
+      <div class="menu-item"><img src="resimler/kiymakol.jpg"><p>Kıymalı Kol Böreği</p></div>
+      <div class="menu-item"><img src="resimler/peynirkol.jpg"><p>Peynirli Kol Böreği</p></div>
+      <div class="menu-item"><img src="resimler/patateslikol.jpg"><p>Patatesli Kol Böreği</p></div>
+      <div class="menu-item"><img src="resimler/kut.jpg"><p>Küt Böreği</p></div>
+    </div>
+  </section>
+
+  <section class="category">
+  <h2>🥯 Kahvaltılıklar</h2>
+  <div class="menu-container">
+    
+    <!-- Poğaça -->
+    <div class="menu-item">
+      <img src="resimler/pogaca.jpg" alt="Poğaça">
+      <p>Poğaça</p>
+      <select>
+        <option value="zeytinli">Zeytinli</option>
+        <option value="patates">Patatesli</option>
+        <option value="peynir">Peynirli</option>
+        <option value="sade">Sade</option>
+        <option value="kasarli">Kaşarlı</option>
+      </select>
+    </div>
+
+    <!-- Dereotlu Poğaça -->
+    <div class="menu-item">
+      <img src="resimler/dereot.jpg" alt="Dereotlu Poğaça">
+      <p>Dere Otlu Poğaça</p>
+    </div>
+
+    <!-- Açma -->
+    <div class="menu-item">
+      <img src="resimler/acma.jpg" alt="Açma">
+      <p>Açma</p>
+      <select>
+        <option value="zeytinli">Zeytinli</option>
+        <option value="sade">Sade</option>
+        <option value="kasarli">Kaşarlı</option>
+        <option value="cikolatali">Çikolatalı</option>
+      </select>
+    </div>
+
+    <!-- Simit -->
+    <div class="menu-item">
+      <img src="resimler/simit.jpg" alt="Simit">
+      <p>Simit</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- Salatalar -->
+  <section class="category">
+    <h2>🥗 Salatalar</h2>
+    <div class="menu-container">
+      <div class="menu-item"><img src="resimler/coban-salata.jpg"><p>Çoban Salata</p></div>
+      <div class="menu-item"><img src="resimler/mevsim.jpg"><p>Mevsim Salata</p></div>
+      <div class="menu-item"><img src="resimler/sogus.jpg"><p>Söğüş</p></div>
+      <div class="menu-item"><img src="resimler/patateskizartma.jpg"><p>Patates Kızartması</p></div>
+    </div>
+  </section>
+
+  <!-- Tost & Kahvaltı Tabağı -->
+ <section class="category">
+  <h2>🥪 Tost & Kahvaltı</h2>
+  <div class="menu-container">
+    
+    <!-- Tost -->
+    <div class="menu-item">
+      <img src="resimler/tost-karisik.jpg" alt="Tost">
+      <p>Tost</p>
+      <select>
+        <option value="domatesli">Domatesli Tost</option>
+        <option value="karisik">Karışık Tost</option>
+        <option value="kasarli">Kaşarlı Tost</option>
+        <option value="kavurmali">Kavurmalı Tost</option>
+      </select>
+    </div>
+
+    <!-- Kahvaltı Tabağı -->
+    <div class="menu-item">
+      <img src="resimler/kahvalti.jpg" alt="Kahvaltı Tabağı">
+      <p>Kahvaltı Tabağı</p>
+    </div>
+
+    <!-- Gözleme -->
+    <div class="menu-item">
+      <img src="resimler/gozleme.jpg" alt="Gözleme">
+      <p>Gözleme</p>
+      <select>
+        <option value="peynirli">Peynirli</option>
+        <option value="kasarli">Kaşarlı</option>
+        <option value="sucuk-kasarli">Sucuk Kaşarlı</option>
+        <option value="patatesli">Patatesli</option>
+        <option value="spanakli">Ispanaklı</option>
+        <option value="spanak-kasarli">Ispanak Kaşarlı</option>
+        <option value="patates-kasarli">Patates Kaşarlı</option>
+      </select>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Yumurtalı Ürünler -->
+  <section class="category">
+  <h2>🍳 Yumurtalı Lezzetler</h2>
+  <div class="menu-container">
+
+    <!-- Menemen -->
+    <div class="menu-item">
+      <img src="resimler/menemen.jpg" alt="Menemen">
+      <p>Menemen</p>
+    </div>
+
+    <!-- Omlet -->
+    <div class="menu-item">
+      <img src="resimler/omlet.jpg" alt="Omlet">
+      <p>Omlet</p>
+      <select>
+        <option value="kasarli">Kaşar Peynirli</option>
+        <option value="kavurmali">Kavurmalı</option>
+        <option value="sade">Sade</option>
+        <option value="sucuklu">Sucuklu</option>
+      </select>
+    </div>
+
+
+  </div>
+</section>
+
+
+
+  <!-- İçecekler -->
+  <section class="category">
+    <h2>🥤 İçecekler</h2>
+    <div class="menu-container">
+      <div class="menu-item"><img src="resimler/cay.jpg"><p>Çay</p></div>
+      <div class="menu-item"><img src="resimler/kahve.jpg"><p>Kahve</p></div>
+      <div class="menu-item"><img src="resimler/coca-cola.jpg"><p> Pepsi</p></div>
+      <div class="menu-item"><img src="resimler/fanta.jpg"><p>Yedigün</p></div>
+      <div class="menu-item"><img src="resimler/sprite.jpg"><p>Sprite</p></div>
+      <div class="menu-item"><img src="resimler/ayran.jpg"><p>Ayran</p></div>
+      <div class="menu-item"><img src="resimler/su.jpg"><p>Su</p></div>
+      <div class="menu-item"><img src="resimler/limonata.jpg"><p>Limonata</p></div>
+      <div class="menu-item">
+  <img src="resimler/soguk-kahve.jpg" alt="Soğuk Kahve">
+  <p>Soğuk Kahve</p>
+  <select>
+    <option value="caramel-macchiato">Caramel Macchiato</option>
+    <option value="latte">Latte</option>
+    <option value="mocha">Mocha</option>
+    <option value="white-chocolate">White Chocolate</option>
+  </select>
+</div>
+
+      <div class="menu-item">
+  <img src="resimler/meyve-suyu.jpg" alt="Meyve Suyu">
+  <p>Meyve Suyu</p>
+  <select>
+    <option value="visneli">Vişneli</option>
+    <option value="tropikal">Tropikal Meyveli</option>
+    <option value="orman">Orman Meyveli</option>
+    <option value="seftali">Şeftali</option>
+    <option value="karisik">Karışık</option>
+  </select>
+</div>
+
+
+  <div class="menu-container">
+    <div class="menu-item">
+      <img src="resimler/buyuk-meyvesuyu.jpg" alt="Büyük Meyve Suyu">
+      <p>Büyük Meyve Suyu</p>
+      <select>
+        <option value="tropicana-seftali">Tropicana Şeftalili</option>
+        <option value="tropicana-karisik">Tropicana Karışık</option>
+        <option value="tropicana-visne">Tropicana Vişneli</option>
+      </select>
+    </div>
+  </div>
+<!-- Capri-Sun -->
+<section class="category">
+  <div class="menu-container">
+    <div class="menu-item">
+      <img src="resimler/caprisun.jpg" alt="Capri-Sun">
+      <p>Capri-Sun</p>
+    </div>
+  </div>
+</section>
+
+<!-- Süt -->
+
+  <div class="menu-container">
+    <div class="menu-item">
+      <img src="resimler/sut.jpg" alt="Süt">
+      <p>Süt</p>
+      <select>
+        <option value="sade">Sade</option>
+        <option value="balli">Ballı Süt</option>
+        <option value="cikolatali">Çikolatalı Süt</option>
+        <option value="cilekli">Çilekli Süt</option>
+      </select>
+    </div>
+  </div>
+
+
+  <div class="menu-container">
+    <div class="menu-item">
+      <img src="resimler/icetea.jpg" alt="Lipton Ice Tea">
+      <p>Lipton Ice Tea</p>
+      <select>
+        <option value="seftali">Şeftali</option>
+        <option value="limon">Limon</option>
+        <option value="mango">Mango Ananas</option>
+      </select>
+    </div>
+  </div>
+
+<!-- Türk Kahvesi -->
+
+  <div class="menu-container">
+    <div class="menu-item">
+      <img src="resimler/turk-kahvesi.jpg" alt="Türk Kahvesi">
+      <p>Türk Kahvesi</p>
+      <select>
+        <option value="sade">Sade</option>
+        <option value="orta">Orta</option>
+        <option value="sekerli">Şekerli</option>
+    </div>
+  </div>
+</section>
+
+
+    </div>
+  </section>
+
+  <footer>
+    © 2025 HSB Sarıyer Börekçisi - Afiyet Olsun!
+  </footer>
+</body>
+</html>
